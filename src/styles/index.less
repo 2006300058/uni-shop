@@ -1,0 +1,28 @@
+@import './css-var.less';
+@import './vant-theme-custom.less';
+
+body{
+    font-family: @font-family-base;
+    font-size: 16px;
+    color: var(--gray-color-8);
+    background-color: var(--gray-color-1);
+}
+
+.text-brand-color {
+    color: var(--brand-color) !important;
+}
+//按住按钮
+.button-active:active {
+    opacity: @active-opacity;
+}
+
+.container-full {
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: var(--white);
+}
+
+.rich-text {
+    white-space: pre-wrap; //保留空格和换行符
+    word-break: break-word; //让长单词或 URL 换行
+}
